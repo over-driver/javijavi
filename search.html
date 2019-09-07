@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JaviJavi</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/google_search_page.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header_container">
+        <header>
+            <img class="google_logo"
+                src="logo.png"
+                alt="google_logo">
+            <div class="search_text_container">
+                <input class="search_edittext" type="text" maxlength="2048" value="build this webpage">
+                <a class="search_button" href="#">
+                    <i class="material-icons search_icon">search</i>
+                </a>
+            </div>
+        </header>
+        <nav>
+            <div class="nav_search_type_container">
+                <a href="#" class="selected nav_search_type">All</a>
+                <!--
+                <a href="#" class="unselected nav_search_type">7MMTV</a>
+                <a href="#" class="unselected nav_search_type">Avgle</a>
+                <a href="#" class="unselected nav_search_type">JAVOPEN</a>
+                <a href="#" class="unselected nav_search_type">HPJAV</a>
+                <a href="#" class="unselected nav_search_type">BestJavPorn</a>
+                <a href="#" class="unselected nav_search_type">Netflav</a>
+                -->
+            </div>
+            <!-- This container is currently blocking top's container -->
+            <!--
+            <div class="nav_settings_container">
+                <a href="#" class="unselected settings">Settings</a>
+                <a href="#" class="unselected tools" role="button">Tools</a>
+            </div>-->
+        </nav>
+        </div>
+        
+        <main>
+            <div class="search_meta_header">About 0 results</div>
+
+            <div id='result_list'></div>
+
+            <div class="pages_container"></div>
+        </main>
+        
+        <div class="video_container">
+            <video muted autoplay loop src="" style="position: fixed;width: inherit">
+            </video>
+        </div>
+        
+        <footer>
+            
+            <p class="user_info">
+                <span class="circle"></span>
+                <strong class="address"> JaviJavi</strong>
+                <!--
+                <span class="divider">-</span>
+                <span>From your Internet address</span>
+                <span class="divider">-</span>
+                <a href="#" class="unselected_footer_items footer_link">Use precise location</a>
+                <span class="divider">-</span>
+                <a href="#" class="unselected_footer_items footer_link">Learn more</a>
+                -->
+            </p>
+            <div class="footer_settings_container">
+                <a href="https://github.com/over-driver/javijavi" class="unselected_footer_items footer_setting footer_link">Learn more from Github</a>
+                <!--
+                <a href="#" class="unselected_footer_items footer_setting footer_link">Send feedback</a>
+                <a href="#" class="unselected_footer_items footer_setting footer_link">Privacy</a>
+                <a href="#" class="unselected_footer_items footer_setting footer_link">Terms</a>
+                -->
+            </div>
+        </footer>
+    </div>
+
+    <script src="search.js"></script>
+</body>
+
+</html>

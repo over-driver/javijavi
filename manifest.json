@@ -1,0 +1,55 @@
+{
+  "name": "JaviJavi",
+  "description": "Search videos",
+  "version": "1.0",
+  "manifest_version": 2,
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "http://*/*",
+    "https://*/*",
+    "webRequest", 
+    "webRequestBlocking",
+    "contextMenus"
+  ],
+  "content_security_policy": "script-src 'self' https://ssl.p.jwpcdn.com 'unsafe-eval' ; object-src 'self'",
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "logo.png"
+  },
+  "commands": {
+    "my_search_action": {
+      "suggested_key": {
+        "windows": "Ctrl+Q",
+        "mac": "Command+Q",
+        "chromeos": "Ctrl+Q",
+        "linux": "Ctrl+Q"
+      },
+      "description": "search"
+    },
+    "my_clean_action": {
+      "suggested_key": {
+        "windows": "Ctrl+Shift+A",
+        "mac": "Command+Shift+A",
+        "chromeos": "Ctrl+Shift+A",
+        "linux": "Ctrl+Shift+A"
+      },
+      "description": "clean tab"
+    },
+    "_execute_browser_action": {
+      "suggested_key": {
+        "windows": "Ctrl+Shift+Q",
+        "mac": "Command+Shift+Q",
+        "chromeos": "Ctrl+Shift+Q",
+        "linux": "Ctrl+Shift+Q"
+      }
+    }
+  },
+  "icons": { "128": "logo.png" }
+}
